@@ -56,7 +56,7 @@ public class COOLStagingTest {
         	test.log(LogStatus.PASS, "Sign in Button");
         } 
     }
-           
+          
     @AfterMethod
     public void getResult(ITestResult result) throws IOException
     {
@@ -67,8 +67,7 @@ public class COOLStagingTest {
             test.log(LogStatus.FAIL, "Snapshot below: " + test.addScreenCapture(screenShotPath));
         }
         extent.endTest(test);
-    }
-     
+    }     
          
     @AfterTest
     public void endreport()
